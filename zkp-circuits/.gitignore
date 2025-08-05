@@ -1,0 +1,32 @@
+# Ignore Rust build outputs
+/target
+**/*.rs.bk
+
+# Ignore Node dependencies
+/node_modules
+/package-lock.json
+
+# Ignore Circom compilation outputs
+/build
+/*.zkey
+/*.ptau
+/*.json
+/*.wasm
+*.sym
+
+# Ignore proof and verification outputs
+proof.json
+public.json
+verification_key.json
+input.json
+
+# Ignore debug and temporary files
+*.log
+*.tmp
+.DS_Store
+
+# Ignore VS Code specific files
+.vscode
+
+# External libraries
+**/circom/
