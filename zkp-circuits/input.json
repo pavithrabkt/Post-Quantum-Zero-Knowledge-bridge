@@ -1,0 +1,9 @@
+{
+  "sender": "1",
+  "receiver": "2",
+  "amount": 500,
+  "nonce": 999,
+  "pathElements": ["123", "456", "789"],
+  "pathIndices": [0, 1, 0],
+  "root": "98347592834"
+}
