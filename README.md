@@ -105,7 +105,7 @@ snarkjs groth16 verify verification_key.json public.json proof.json
 <hr/>
 
 ## Easy setup
-- Install wsl using the following command before proceeding
+- Install wsl using the following command before proceeding. Use `Powershell`
   ```bash
   wsl --install
   cd /mnt/
@@ -117,10 +117,12 @@ snarkjs groth16 verify verification_key.json public.json proof.json
   git config --global user.email "your.email@example.com"
   sudo apt update
   sudo apt install nodejs npm -y
+  git clone "https://github.com/Naveen-369/Post-Quantum-Zero-Knowledge-bridge.git"
   ```
 - Get into the project directory, activate execution permission and run the script file
   ```bash
-  cd root-Directort/
+  cd Post-Quantum-Zero-Knowledge-bridge
+  cd zkp-circuits
   chmod +x run_project.sh
   ```
 🚀 **It will take `10 to 15` mins solid. Just run the above command.**  
