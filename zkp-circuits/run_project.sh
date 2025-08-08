@@ -2,11 +2,15 @@ git clone "https://github.com/iden3/circom.git"
 clear
 echo "Circom installed from the Global github repo : )"
 echo "Initiating the installation process . . . . "		
-cd circom/
+cd circom
 cargo build --release
 cargo install --path circom
 cd ..
-npm install snarkjs
+sudo apt update
+sudo apt install nodejs npm -y
+npm install -g snarkjs
+npm install circomlib
+echo "Installation of Node packages successfull"
 mkdir build
 circom transfer.circom --r1cs --wasm --sym --c
 clear
