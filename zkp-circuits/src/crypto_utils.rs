@@ -60,4 +60,3 @@ pub fn decrypt_payload(
 pub fn verify_integrity(decrypted: &str, original_len: usize) -> bool {
     decrypted.len() > 0 && decrypted.len() >= original_len
 }
-
