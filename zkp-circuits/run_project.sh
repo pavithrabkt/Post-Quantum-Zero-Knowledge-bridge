@@ -30,3 +30,6 @@ echo "ZKP generation Completed . . . "
 echo "Transmission procedures started . . ."
 cargo build --release
 cargo run
+python3 reform_output.py
+echo "\n\n\n\n\t\t\t Zero Knowledge Proof Verification . . . . . . "
+snarkjs groth16 verify verification_key.json public.json received.json
