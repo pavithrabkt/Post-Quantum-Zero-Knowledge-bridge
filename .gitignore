@@ -1,0 +1,14 @@
+node_modules/
+target/
+transfer_cpp/
+transfer_js
+
+*.ptau
+*.zkey
+*.wtns
+*.r1cs
+*.sym
+
+
+*.json
+!input.json
