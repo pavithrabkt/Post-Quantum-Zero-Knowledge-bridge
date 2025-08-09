@@ -110,6 +110,7 @@ snarkjs groth16 verify verification_key.json public.json proof.json
   wsl --install
   cd /mnt/
   cd <folderPath>
+  curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh
   ```
 - Configure Git and Node if not configured properly.
   ```bash
