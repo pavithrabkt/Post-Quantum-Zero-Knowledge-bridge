@@ -1,6 +1,6 @@
 import json
 
-def restructure_flattened_proof(input_file='output.json', output_file='output.json'):
+def restructure_flattened_proof(input_file='received.json', output_file='received.json'):
     with open(input_file, 'r') as f:
         data = json.load(f)
 
