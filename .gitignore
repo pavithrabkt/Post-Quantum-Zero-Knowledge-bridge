@@ -1,14 +1,17 @@
-node_modules/
-target/
-transfer_cpp/
-transfer_js
+node_modules
+.env
 
-*.ptau
-*.zkey
-*.wtns
-*.r1cs
-*.sym
+# Hardhat files
+/cache
+/artifacts
 
+# TypeChain files
+/typechain
+/typechain-types
 
-*.json
-!input.json
+# solidity-coverage files
+/coverage
+/coverage.json
+
+# Hardhat Ignition default folder for deployments against a local node
+ignition/deployments/chain-31337
