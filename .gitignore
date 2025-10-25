@@ -4,6 +4,8 @@ node_modules
 # Hardhat files
 /cache
 /artifacts
+/ignition
+/node_modules
 
 # TypeChain files
 /typechain
@@ -15,3 +17,32 @@ node_modules
 
 # Hardhat Ignition default folder for deployments against a local node
 ignition/deployments/chain-31337
+
+#zkp-output files
+zkp-circuits/build
+zkp-circuits/circom
+zkp-circuits/node_modules
+zkp-circuits/src
+zkp-circuits/target
+zkp-circuits/input.json
+zkp-circuits/package.json
+zkp-circuits/package-lock.json
+zkp-circuits/pot12_0000.ptau
+zkp-circuits/pot12_0001.ptau
+zkp-circuits/pot12_final/ptau
+zkp-circuits/proof.json
+zkp-circuits/public.json
+zkp-circuits/transfer_0000.zkey
+zkp-circuits/transfer_final.zkey
+zkp-circuits/verification_key
+zkp-circuits/witness.wtns
+zkp-circuits/transfer.r1cs
+zkp-circuits/transfer.sym
+zkp-circuits/transfer_js/
+
+proof.json
+public.json
+verification_key.json
+
+hardhat.config.ts
+hardhat.config.js

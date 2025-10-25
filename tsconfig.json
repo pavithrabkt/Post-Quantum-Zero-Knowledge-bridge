@@ -10,5 +10,5 @@
     "forceConsistentCasingInFileNames": true,
     "outDir": "dist"
   },
-  "include": ["scripts", "test", "hardhat.config.ts"]
+  "include": ["scripts", "test", "hardhat.config.ts", "zkp-circuits/scripts/build_input_poseidon.js"]
 }
