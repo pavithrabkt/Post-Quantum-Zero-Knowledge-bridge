@@ -46,3 +46,5 @@ verification_key.json
 
 hardhat.config.ts
 hardhat.config.js
+
+deployed-addresses.json

@@ -1,4 +1,4 @@
-// scripts/verifyProof.js - FIXED VERSION
+// scripts/verifyProof.js
 import fs from "fs";
 import pkg from "hardhat";
 const { ethers } = pkg;
@@ -19,10 +19,8 @@ async function main() {
   const verifierAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
   const verifier = await ethers.getContractAt("ZKBridgeVerifier", verifierAddress);
 
-  // ✅ FIX: Extract only first 2 coordinates (remove homogeneous "1")
   const a = [proof.pi_a[0], proof.pi_a[1]];
   
-  // ✅ FIX: Swap pi_b coordinates for Solidity format
   const b = [
     [proof.pi_b[0][1], proof.pi_b[0][0]], 
     [proof.pi_b[1][1], proof.pi_b[1][0]]

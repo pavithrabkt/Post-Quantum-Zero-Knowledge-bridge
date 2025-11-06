@@ -6,7 +6,7 @@ interface IBridgeVerifier {
         uint[2] calldata a,
         uint[2][2] calldata b,
         uint[2] calldata c,
-        uint256[2] calldata input  // ✅ updated from [1] → [2]
+        uint256[2] calldata input  
     ) external returns (bool);
 }
 
@@ -27,7 +27,7 @@ contract L2A {
         uint[2] calldata a,
         uint[2][2] calldata b,
         uint[2] calldata c,
-        uint256[2] calldata input  // ✅ updated
+        uint256[2] calldata input  
     ) public {
         IBridgeVerifier v = IBridgeVerifier(verifier);
         require(v.verifyProof(a, b, c, input), "Invalid ZK Proof");
